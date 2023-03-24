@@ -1,0 +1,28 @@
+{
+  "name": "nature-delights-with-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "homepage": "https://nature-delights-with-astro.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techakayy/nature-delights-with-astro.git"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^3.1.1",
+    "@astrojs/vue": "^2.1.0",
+    "astro": "^2.1.6",
+    "tailwindcss": "^3.2.7",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@pinegrow/astro-module": "^3.0.0-beta.85",
+    "@pinegrow/tailwindcss-plugin": "^3.0.0-beta.44"
+  }
+}
