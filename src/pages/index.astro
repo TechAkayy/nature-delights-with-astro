@@ -1,16 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import HeroSection from '../components/HeroSection.vue'
-import HighlightSection from '../components/HighlightSection.vue'
-import FeatureSection from '../components/FeatureSection.vue'
-import SubscribeSection from '../components/SubscribeSection.vue'
+import StatsSection from '../components/StatsSection.svelte'
+import FeatureSection from '../components/FeatureSection.tsx'
+import SubscribeSection from '../components/SubscribeSection.jsx'
 import TestimonialSection from '../components/TestimonialSection.vue'
+const name = "I'm a hero!"
 ---
 
 <Layout title="Welcome to Astro.">
-  <HeroSection client:load /><HighlightSection client:visible /><FeatureSection
+  <HeroSection client:load /><StatsSection client:load /><FeatureSection
     client:visible
-  /><SubscribeSection client:visible /><TestimonialSection client:visible />
+  />
+  <SubscribeSection client:visible />
+  <TestimonialSection client:visible />
 </Layout>
 
 <style></style>

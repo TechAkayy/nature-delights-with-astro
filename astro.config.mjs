@@ -4,6 +4,10 @@ import pinegrow from '@pinegrow/astro-module'
 // import { fileURLToPath, URL } from 'node:url'
 
 import tailwind from '@astrojs/tailwind'
+import react from '@astrojs/react'
+import preact from '@astrojs/preact'
+
+import svelte from '@astrojs/svelte'
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,7 +21,12 @@ export default defineConfig({
           restartOnConfigUpdate: true,
           restartOnThemeUpdate: false,
         },
+        designableFileTypes: ['.astro', '.jsx', '.tsx', '.svelte'],
+        // experimental: {
+        //   metaFrameworks: ['astro'],
+        // },
       },
+
       // https://github.com/antfu/unplugin-vue-components#configuration
       autoImportComponents: {
         dirs: ['src/components'],
@@ -26,7 +35,12 @@ export default defineConfig({
     tailwind({
       // Example: Disable injecting a basic `base.css` import on every page.
       // Useful if you need to define and/or import your own custom `base.css`.
-      config: { applyBaseStyles: false },
+      config: {
+        applyBaseStyles: false,
+      },
     }),
+    react(),
+    preact(),
+    svelte(),
   ],
 })

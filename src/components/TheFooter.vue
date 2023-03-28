@@ -1,10 +1,10 @@
 <script setup lang="ts">
-	defineProps({
-		name: {
-			type: String,
-			default: 'TheFooter',
-		},
-	})
+  defineProps({
+    name: {
+      type: String,
+      default: 'Footer',
+    },
+  })
 </script>
 
 <template><footer class="bg-black pt-12 text-gray-300"> 
@@ -69,8 +69,7 @@
             </div>             
         </div>         
     </footer>
-	
+  
 </template>
 
 <style scoped></style>
-

@@ -1,4 +1,3 @@
-
 /* Pinegrow generated Design Panel Begin */
 
 const pg_colors = {gray: {'50': '#f9fafb',
